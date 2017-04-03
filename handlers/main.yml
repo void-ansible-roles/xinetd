@@ -1,0 +1,3 @@
+---
+- name: xinetd
+  command: sv restart xinetd

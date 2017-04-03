@@ -1,0 +1,11 @@
+---
+- name: Install xinetd
+  xbps:
+    pkg: xinetd
+    state: present
+
+- name: Enable xinetd
+  file:
+    src: /etc/sv/xinetd
+    dest: /var/service/xinetd
+    state: link
